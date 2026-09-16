@@ -1,6 +1,8 @@
 (function(){
   var host=document.querySelector('#productos');
   if(!host)return;
+  var assetBase='imagenes/';
+  var catalogBase='imagenes/';
   var data=[
     ['bebe-01-cojin-azul.png','Cojín personalizado — diseño azul — ₡7.000'],
     ['bebe-02-cojin-rosa.png','Cojín personalizado — diseño rosa — ₡7.000'],
@@ -19,7 +21,7 @@
   data.forEach(function(item){
     var tile=document.createElement('figure');
     tile.className='baby-tile';
-    tile.innerHTML='<img src="'+item[0]+'" alt="'+item[1]+'"><figcaption>'+item[1]+'<small>Haz clic para ver y agregar al carrito</small></figcaption>';
+    tile.innerHTML='<img src="'+assetBase+item[0]+'" alt="'+item[1]+'"><figcaption>'+item[1]+'<small>Haz clic para ver y agregar al carrito</small></figcaption>';
     tile.onclick=function(){
       var modal=document.getElementById('lightbox'),img=document.getElementById('lightbox-image'),title=document.getElementById('lightbox-title'),buy=document.getElementById('lightbox-buy');
       if(!modal||!img||!title||!buy)return;
@@ -36,10 +38,10 @@
     ['27-botellas-owala.png','Botellas Owala — ₡10.300']
   ];
   if(generalGrid)generalData.forEach(function(item){
-    if(generalGrid.querySelector('img[src*="catalogo/'+item[0]+'"]'))return;
+    if(generalGrid.querySelector('img[src*="imagenes/'+item[0]+'"]'))return;
     var card=document.createElement('figure');
     card.className='catalog-item';
-    card.innerHTML='<img src="'+item[0]+'" alt="'+item[1]+'" loading="lazy"><figcaption>'+item[1]+'<small>Personaliza con tu diseño</small></figcaption>';
+    card.innerHTML='<img src="'+catalogBase+item[0]+'" alt="'+item[1]+'" loading="lazy"><figcaption>'+item[1]+'<small>Personaliza con tu diseño</small></figcaption>';
     card.onclick=function(){
       var modal=document.getElementById('lightbox'),img=document.getElementById('lightbox-image'),title=document.getElementById('lightbox-title'),buy=document.getElementById('lightbox-buy');
       if(!modal||!img||!title||!buy)return;
