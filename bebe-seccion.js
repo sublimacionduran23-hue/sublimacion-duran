@@ -1,8 +1,8 @@
 (function(){
   var host=document.querySelector('#productos');
   if(!host)return;
-  var assetBase='imagenes/';
-  var catalogBase='catalogo/';
+  var assetBase='';
+  var catalogBase='';
   var data=[
     ['bebe-01-cojin-azul.png','Cojín personalizado — diseño azul — ₡7.000'],
     ['bebe-02-cojin-rosa.png','Cojín personalizado — diseño rosa — ₡7.000'],
