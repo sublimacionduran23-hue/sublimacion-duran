@@ -9,7 +9,9 @@
     ['bebe-03-cojin-girafa.png','Cojín personalizado — jirafa — ₡7.000'],
     ['bebe-04-ceramica-sofia.png','Cerámica personalizada — bebé Sofía — ₡6.000'],
     ['bebe-05-ceramica-isabella.jpeg','Cerámica personalizada — bebé Isabella — ₡6.000'],
-    ['bebe-06-cojin-mateo.jpeg','Cojín personalizado — bebé Mateo — ₡6.000']
+    ['bebe-06-cojin-mateo.jpeg','Cojín personalizado — bebé Mateo — ₡6.000'],
+    ['bebe-07-camisetas-baby-shower.png','Camisetas personalizadas para baby shower'],
+    ['bebe-08-panos-de-mano.png','Paños de mano personalizados']
   ];
   var style=document.createElement('style');
   style.textContent='.baby-feature{padding:42px 0;background:linear-gradient(135deg,#fff7fb,#eef8ff)}.baby-feature .section-head{margin-bottom:22px}.baby-feature h2{color:#15346e}.baby-feature h2 span{color:#e93486}.baby-collage{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.baby-tile{margin:0;background:#fff;border:1px solid #e7dced;border-radius:20px;overflow:hidden;box-shadow:0 10px 24px #24104f14;cursor:zoom-in;transition:transform .2s,box-shadow .2s}.baby-tile:hover{transform:translateY(-4px);box-shadow:0 16px 30px #24104f26}.baby-tile:first-child{grid-column:span 2;grid-row:span 2}.baby-tile img{display:block;width:100%;height:180px;object-fit:cover}.baby-tile:first-child img{height:374px}.baby-tile figcaption{padding:11px 13px;font-weight:850;color:#24104f}.baby-tile small{display:block;color:#77809b;font-weight:600;margin-top:3px}@media(max-width:700px){.baby-collage{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.baby-tile:first-child{grid-column:span 2}.baby-tile img,.baby-tile:first-child img{height:190px}}';
