@@ -96,3 +96,16 @@
     if(caption){caption.firstChild.textContent=precios[nombre]+' ';}
   });
 })();
+
+(function(){
+  var grid=document.querySelector('.catalog-grid');
+  if(!grid)return;
+  for(var i=1;i<=41;i++){
+    var file='nuevo-'+String(i).padStart(2,'0')+'.png';
+    var f=document.createElement('figure');
+    f.className='catalog-item';
+    var label='Novedad personalizada '+String(i).padStart(2,'0');
+    f.innerHTML='<img src="catalogo/'+file+'" alt="'+label+'" loading="lazy"><figcaption>'+label+'<small>Personaliza con tu diseño</small></figcaption>';
+    grid.appendChild(f);
+  }
+})();
