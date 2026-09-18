@@ -14,11 +14,11 @@
     ['bebe-08-panos-de-mano.png','Paños de mano personalizados']
   ];
   var style=document.createElement('style');
-  style.textContent='.baby-feature{padding:42px 0;background:linear-gradient(135deg,#fff7fb,#eef8ff)}.baby-feature .section-head{margin-bottom:22px}.baby-feature h2{color:#15346e}.baby-feature h2 span{color:#e93486}.baby-collage{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.baby-tile{margin:0;background:#fff;border:1px solid #e7dced;border-radius:20px;overflow:hidden;box-shadow:0 10px 24px #24104f14;cursor:zoom-in;transition:transform .2s,box-shadow .2s}.baby-tile:hover{transform:translateY(-4px);box-shadow:0 16px 30px #24104f26}.baby-tile:first-child{grid-column:span 2;grid-row:span 2}.baby-tile img{display:block;width:100%;height:180px;object-fit:cover}.baby-tile:first-child img{height:374px}.baby-tile figcaption{padding:11px 13px;font-weight:850;color:#24104f}.baby-tile small{display:block;color:#77809b;font-weight:600;margin-top:3px}@media(max-width:700px){.baby-collage{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.baby-tile:first-child{grid-column:span 2}.baby-tile img,.baby-tile:first-child img{height:190px}}';
+  style.textContent='.baby-feature{padding:42px 0;background:linear-gradient(135deg,#fff7fb,#eef8ff);overflow:hidden}.baby-feature .section-head{margin-bottom:22px}.baby-feature h2{color:#15346e}.baby-feature h2 span{color:#e93486}.baby-collage{display:flex;gap:16px;overflow-x:auto;padding:8px 2px 18px;scrollbar-width:thin}.baby-tile{flex:0 0 270px;margin:0;background:#fff;border:1px solid #e7dced;border-radius:20px;overflow:hidden;box-shadow:0 10px 24px #24104f14;cursor:zoom-in;transition:transform .2s,box-shadow .2s}.baby-tile:hover{transform:translateY(-4px);box-shadow:0 16px 30px #24104f26}.baby-tile img{display:block;width:100%;height:270px;object-fit:cover}.baby-tile figcaption{padding:11px 13px;font-weight:850;color:#24104f}.baby-tile small{display:block;color:#77809b;font-weight:600;margin-top:3px}.baby-carousel-help{text-align:center;color:#e93486;font-weight:900;margin-top:4px}@media(max-width:700px){.baby-tile{flex-basis:220px}.baby-tile img{height:220px}}';
   document.head.appendChild(style);
   var section=document.createElement('section');
   section.className='baby-feature';
-  section.innerHTML='<div class="wrap"><div class="section-head"><h2>Productos para <span>bebé</span></h2><p>Detalles personalizados para celebrar sus primeros momentos.</p></div><div class="baby-collage"></div></div>';
+  section.innerHTML='<div class="wrap"><div class="section-head"><h2>Productos para <span>bebé</span></h2><p>Detalles personalizados para celebrar sus primeros momentos.</p></div><div class="baby-collage"></div><div class="baby-carousel-help">Carrusel lento · pasa el cursor para detenerlo →</div></div>';
   var collage=section.querySelector('.baby-collage');
   data.forEach(function(item){
     var tile=document.createElement('figure');
@@ -31,6 +31,18 @@
     };
     collage.appendChild(tile);
   });
+  var babyAutoScroll=true;
+  setInterval(function(){
+    if(!babyAutoScroll)return;
+    var max=collage.scrollWidth-collage.clientWidth;
+    if(max<=0)return;
+    if(collage.scrollLeft>=max-2)collage.scrollLeft=0;
+    else collage.scrollLeft+=1;
+  },75);
+  collage.addEventListener('mouseenter',function(){babyAutoScroll=false;});
+  collage.addEventListener('mouseleave',function(){babyAutoScroll=true;});
+  collage.addEventListener('touchstart',function(){babyAutoScroll=false;},{passive:true});
+  collage.addEventListener('touchend',function(){setTimeout(function(){babyAutoScroll=true;},1200);},{passive:true});
   host.parentNode.insertBefore(section,host);
   var generalGrid=document.querySelector('.catalog-grid');
   var generalData=[
