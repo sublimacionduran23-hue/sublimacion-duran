@@ -118,6 +118,17 @@
     f.className='catalog-item';
     var label='Novedad personalizada '+String(i).padStart(2,'0');
     f.innerHTML='<img src="catalogo/'+file+'" alt="'+label+'" loading="lazy"><figcaption>'+label+'<small>Personaliza con tu diseño</small></figcaption>';
+    (function(card,itemLabel){
+      card.onclick=function(){
+        var modal=document.getElementById('lightbox'),img=document.getElementById('lightbox-image'),title=document.getElementById('lightbox-title'),buy=document.getElementById('lightbox-buy');
+        if(!modal||!img||!title||!buy)return;
+        img.src=card.querySelector('img').src;
+        img.alt=itemLabel;
+        title.textContent=itemLabel;
+        buy.textContent='Agregar al carrito';
+        modal.classList.add('open');
+      };
+    })(f,label);
     grid.appendChild(f);
   }
 })();
