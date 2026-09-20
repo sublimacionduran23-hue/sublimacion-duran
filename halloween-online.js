@@ -7,7 +7,26 @@
     ['halloween-09.jpeg', 'Camiseta negra — It'], ['halloween-10.jpeg', 'Camiseta negra — Catrina'],
     ['halloween-11.jpeg', 'Camiseta blanca — calavera'], ['halloween-12-taza-it.png', 'Taza blanca — Pennywise'],
     ['halloween-13-tazas-terror.png', 'Tazas — personajes de terror'], ['halloween-14-taza-saw.png', 'Taza negra — Saw'],
-    ['halloween-15-camisetas-terror.jpeg', 'Camisetas blancas — terror'], ['halloween-16-taza-doll.jpeg', 'Taza negra — muñeca de terror']
+    ['halloween-15-camisetas-terror.jpeg', 'Camisetas blancas — terror'], ['halloween-16-taza-doll.jpeg', 'Taza negra — muñeca de terror'],
+    ['halloween-17.png', 'Camiseta Halloween — diseño adulto 1'], ['halloween-18.png', 'Camiseta Halloween — diseño adulto 2'],
+    ['halloween-19.png', 'Camiseta Halloween — diseño adulto 3'], ['halloween-20.png', 'Camiseta Halloween — diseño adulto 4'],
+    ['halloween-21.png', 'Camiseta Halloween — diseño adulto 5'], ['halloween-22.png', 'Camiseta Halloween — diseño adulto 6'],
+    ['halloween-23.png', 'Camiseta Halloween — diseño adulto 7'], ['halloween-24.png', 'Camiseta Halloween — diseño adulto 8'],
+    ['halloween-25.png', 'Camiseta Halloween — diseño adulto 9'],
+    ['halloween-26.png', 'Camiseta infantil Halloween — diseño 1'], ['halloween-27.png', 'Camiseta infantil Halloween — diseño 2'],
+    ['halloween-28.png', 'Camiseta infantil Halloween — diseño 3'], ['halloween-29.png', 'Camiseta infantil Halloween — diseño 4'],
+    ['halloween-30.png', 'Camiseta infantil Halloween — diseño 5'], ['halloween-31.png', 'Camiseta infantil Halloween — diseño 6'],
+    ['halloween-32.png', 'Camiseta infantil Halloween — diseño 7'], ['halloween-33.png', 'Camiseta infantil Halloween — diseño 8'],
+    ['halloween-34.png', 'Camiseta infantil Halloween — diseño 9'], ['halloween-35.png', 'Camiseta infantil Halloween — diseño 10'],
+    ['halloween-36.png', 'Camiseta infantil Halloween — diseño 11'], ['halloween-37.png', 'Taza personalizada Halloween — diseño 1'],
+    ['halloween-38.png', 'Taza personalizada Halloween — diseño 2'], ['halloween-39.png', 'Taza personalizada Halloween — diseño 3'],
+    ['halloween-40.png', 'Taza personalizada Halloween — diseño 4'], ['halloween-41.png', 'Camiseta negra Halloween — diseño 1'],
+    ['halloween-42.png', 'Camiseta negra Halloween — diseño 2'], ['halloween-43.png', 'Camiseta negra Halloween — diseño 3'],
+    ['halloween-44.png', 'Camiseta negra Halloween — diseño 4'], ['halloween-45.png', 'Camiseta negra Halloween — diseño 5'],
+    ['halloween-46.png', 'Camiseta negra Halloween — diseño 6'], ['halloween-47.png', 'Camiseta negra Halloween — diseño 7'],
+    ['halloween-48.png', 'Camiseta negra Halloween — diseño 8'], ['halloween-49.png', 'Camiseta negra Halloween — diseño 9'],
+    ['halloween-50.png', 'Camiseta negra Halloween — diseño 10'], ['halloween-51.png', 'Camiseta negra Halloween — diseño 11'],
+    ['halloween-52.png', 'Camiseta negra Halloween — diseño 12'], ['halloween-53.png', 'Camiseta negra Halloween — diseño 13']
   ];
   function start() {
     var assetBase = 'imagenes/';
