@@ -101,7 +101,7 @@
     'q.jpeg':'Estuches para celular — ₡7.000',
     'r.jpeg':'Magnéticos acrílicos — ₡1.800 c/u',
     't.jpeg':'Pulseras — ₡2.500',
-    'u.jpeg':'Pulseras personalizadas — ₡5.000',
+    'u.jpeg':'Pulseras personalizadas',
     'v.jpeg':'Bolso de hombro personalizado — ₡9.500',
     '16.jpeg':'Camisetas familiares — adultos ₡6.000 / niños ₡5.000',
     '17.jpeg':'Mamelucos para bebé — 0 a 12 meses ₡5.500',
