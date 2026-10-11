@@ -4,45 +4,486 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#24104f">
-  <meta name="description" content="Detalles personalizados y regalos llenos de color. Sublimación Durán crea tazas, camisas, llaveros y más.">
+  <meta name="description" content="Detalles personalizados y regalos llenos de color. Sublimación Durán crea tazas, camisas, llaveros, cojines y más en Costa Rica.">
   <title>Sublimación Durán | Detalles que brillan</title>
   <link rel="icon" href="logo.png" type="image/png">
+  <meta property="og:title" content="Sublimación Durán | Detalles que brillan">
+  <meta property="og:description" content="Convertimos tus recuerdos en regalos personalizados: tazas, camisas, llaveros, cojines y mucho más.">
+  <meta property="og:image" content="hero-products.png">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root { --ink:#24104f; --pink:#ed2184; --yellow:#ffd52a; --aqua:#24cfc5; --cream:#fff9ef; --muted:#6c6380; --line:#eadff0; }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.5} a{color:inherit;text-decoration:none}
-    .wrap{width:min(1160px,calc(100% - 40px));margin:auto}.topbar{background:var(--ink);color:#fff;padding:10px 0;font-size:.86rem}.topbar .wrap{display:flex;justify-content:space-between;gap:16px;align-items:center}.topbar a{color:var(--yellow);font-weight:800}
-    header{background:rgba(255,249,239,.88);backdrop-filter:blur(12px);position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(234,223,240,.9)}nav{height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:14px;font-weight:950;letter-spacing:-.04em}.brand img{width:72px;height:72px;object-fit:cover;border-radius:18px;box-shadow:0 5px 14px #24104f18}.brand span{font-size:1.25rem}.brand small{display:block;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);line-height:1}.links{display:flex;gap:20px;color:#5d526d;font-weight:700}.links a:hover{color:var(--pink)}.socials{display:flex;gap:8px;align-items:center}.socials a{display:grid;place-items:center;width:38px;height:38px;background:#fff;border:1px solid var(--line);border-radius:50%;font-size:.75rem;font-weight:950;transition:.2s}.socials a:hover{background:var(--yellow);border-color:var(--yellow);transform:translateY(-2px)}.nav-cta{background:var(--pink);color:#fff;padding:12px 18px;border-radius:999px;font-weight:850;box-shadow:0 8px 20px #ed218433}
-    .hero{padding:76px 0 70px;overflow:hidden;position:relative}.hero:before{content:"";position:absolute;width:420px;height:420px;background:#ffd52a66;border-radius:50%;filter:blur(10px);right:-160px;top:-130px;z-index:-1}.hero-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:56px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--pink);font-weight:900;text-transform:uppercase;letter-spacing:.13em;font-size:.78rem}.eyebrow:before{content:"✦";font-size:1.2rem}.hero h1{font-size:clamp(3rem,6vw,5.8rem);line-height:.95;letter-spacing:-.07em;margin:18px 0 24px;max-width:620px}.hero h1 em{color:var(--pink);font-style:normal}.hero p{color:var(--muted);font-size:1.17rem;max-width:480px;margin:0 0 30px}.actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}.button{display:inline-flex;justify-content:center;align-items:center;gap:10px;border:0;cursor:pointer;font:inherit;font-weight:900;border-radius:14px;padding:15px 21px;transition:transform .2s,box-shadow .2s}.button:hover{transform:translateY(-3px)}.button.primary{background:var(--pink);color:#fff;box-shadow:0 12px 25px #ed218433}.button.secondary{border:2px solid var(--ink);background:transparent}.hero-photo{border-radius:34px 34px 34px 10px;overflow:hidden;box-shadow:20px 20px 0 var(--aqua),0 24px 60px #24104f2b;background:#0c3d7c}.hero-photo img{display:block;width:100%;aspect-ratio:1.45;object-fit:cover}
-    .strip{background:var(--yellow);padding:17px 0;overflow:hidden}.strip-inner{display:flex;justify-content:center;gap:35px;flex-wrap:wrap;font-weight:950;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}.strip b{color:var(--pink)}
-    section{padding:88px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:36px}.section-head h2{font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.06em;line-height:1;margin:0}.section-head p{max-width:390px;color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;min-height:210px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-6px);box-shadow:0 16px 30px #24104f14}.card:nth-child(2){background:#eefdf9}.card:nth-child(3){background:#fff4fb}.card:nth-child(4){background:#fffbea}.icon{font-size:2.3rem}.card h3{margin:16px 0 4px;font-size:1.15rem}.card p{color:var(--muted);font-size:.95rem;margin:0}.about{background:var(--ink);color:#fff;position:relative;overflow:hidden}.about:after{content:"✦";position:absolute;right:8%;top:15%;font-size:12rem;color:#ffffff0a}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about h2{font-size:clamp(2.2rem,4vw,4rem);line-height:1;letter-spacing:-.06em;margin:18px 0}.about p{color:#ddd2ef;font-size:1.08rem}.about .eyebrow{color:var(--yellow)}.steps{display:grid;gap:16px}.step{display:flex;gap:18px;align-items:flex-start;padding:20px;border:1px solid #ffffff22;border-radius:18px;background:#ffffff0b}.step strong{display:grid;place-items:center;background:var(--pink);width:34px;height:34px;border-radius:50%;flex:none}.step h3{margin:0 0 3px}.step p{font-size:.95rem;margin:0;color:#c9bfda}
-    .contact{background:linear-gradient(135deg,var(--pink),#b20e78);color:#fff;padding:60px 0}.contact-grid{display:flex;justify-content:space-between;align-items:center;gap:28px}.contact h2{font-size:clamp(2.2rem,4vw,4rem);letter-spacing:-.06em;line-height:1;margin:0 0 10px}.contact p{color:#ffe8f5;margin:0}.wa{background:#25d366;color:#fff;border-radius:999px;padding:17px 24px;font-weight:950;white-space:nowrap;box-shadow:0 12px 24px #65053e55}.wa span{font-size:1.25rem;margin-right:7px}footer{padding:30px 0;color:var(--muted);font-size:.9rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{color:var(--ink);font-weight:900}
-    @media(max-width:850px){.hero{padding-top:48px}.hero-grid,.about-grid{grid-template-columns:1fr;gap:40px}.hero-photo{order:-1}.cards{grid-template-columns:repeat(2,1fr)}.links{display:none}.socials{display:none}.contact-grid{align-items:flex-start;flex-direction:column}.footer-inner{flex-direction:column;align-items:flex-start}}
-    .catalog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}.catalog-item{margin:0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 20px #24104f0d}.catalog-item img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover}.catalog-item figcaption{padding:14px 16px;font-weight:850}.catalog-item small{display:block;color:var(--muted);font-weight:500;margin-top:3px}.catalog-cta{margin-top:30px;text-align:center}.catalog-cta a{color:var(--pink);font-weight:900}
-    .moving-banner{background:#fff;border-bottom:1px solid var(--line);overflow:hidden;padding:14px 0}.top-banner{display:none}.moving-track{display:flex;width:max-content;animation:slide 34s linear infinite}.moving-track:hover{animation-play-state:paused}.moving-item{width:190px;height:115px;margin:0 8px;border-radius:16px;overflow:hidden;position:relative;flex:none;background:#f1e8f2;cursor:zoom-in}.moving-item img{width:100%;height:100%;object-fit:cover}.moving-item span{position:absolute;left:10px;bottom:8px;color:#fff;font-weight:900;font-size:.8rem;text-shadow:0 2px 8px #000;background:#24104fcc;border-radius:999px;padding:4px 9px}.catalog-item{cursor:zoom-in}.lightbox{display:none;position:fixed;inset:0;z-index:30;background:#24104fd9;padding:24px;align-items:center;justify-content:center}.lightbox.open{display:flex}.lightbox-card{width:min(720px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:24px;padding:14px;position:relative;text-align:center}.lightbox-card img{display:block;max-width:100%;max-height:70vh;object-fit:contain;margin:auto;border-radius:14px}.lightbox-close{position:absolute;right:16px;top:12px;border:0;background:#fff;color:var(--ink);font-size:1.4rem;border-radius:50%;width:36px;height:36px;cursor:pointer}.lightbox-card .button{margin:14px auto 4px}
-    @keyframes slide{to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.moving-track{animation:none}}
-    @media(max-width:500px){.wrap{width:min(100% - 28px,1160px)}nav{height:68px}.brand img{width:46px;height:46px}.hero h1{font-size:3.25rem}.hero-photo{border-radius:24px 24px 24px 8px;box-shadow:10px 10px 0 var(--aqua)}section{padding:64px 0}.section-head{display:block}.section-head p{margin-top:16px}.cards{grid-template-columns:1fr 1fr;gap:10px}.card{padding:18px;min-height:195px}.catalog-grid{grid-template-columns:repeat(2,1fr);gap:10px}.catalog-item figcaption{padding:10px;font-size:.9rem}.topbar .wrap{font-size:.77rem}.topbar .wrap span{display:none}.strip-inner{gap:13px;font-size:.7rem}}
-  .cards{display:none}.brand img{width:190px;height:82px;object-fit:contain;border-radius:0;filter:drop-shadow(0 5px 8px #24104f18)}.brand span{display:none}.brand small{display:none}.catalog-cta{margin-top:20px;text-align:center}.catalog-cta a{display:inline-flex;background:var(--pink);color:#fff;padding:13px 20px;border-radius:999px;font-weight:900;box-shadow:0 8px 18px #ed218433}.lightbox-card{max-height:92vh}@media(max-width:500px){nav{height:74px}.brand img{width:154px;height:64px}.cards{display:none}}
+    :root{
+      --ink:#24104f; --ink-soft:#3b2270; --pink:#ed2184; --pink-deep:#b20e78;
+      --yellow:#ffd52a; --aqua:#24cfc5; --cream:#fff9ef; --paper:#fff;
+      --muted:#6c6380; --line:#eadff0;
+      --r-sm:14px; --r-md:20px; --r-lg:28px; --r-xl:38px;
+      --shadow-sm:0 2px 8px #24104f0f;
+      --shadow-md:0 10px 28px #24104f14;
+      --shadow-lg:0 26px 60px #24104f24;
+      --display:"Fraunces",Georgia,serif;
+      --body:"Outfit",Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+      --section:clamp(64px,8vw,112px);
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%}
+    h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.025em;line-height:1.05;margin:0}
+    :focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:6px}
+
+    .wrap{width:min(1180px,calc(100% - 44px));margin-inline:auto}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--pink);font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:.74rem}
+    .eyebrow::before{content:"✦";font-size:1.1em}
+
+    /* ---------- top bar + header ---------- */
+    .topbar{background:var(--ink);color:#efe6ff;font-size:.84rem}
+    .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;min-height:42px;padding:8px 0}
+    .topbar a{color:var(--yellow);font-weight:700}
+    .topbar a:hover{text-decoration:underline}
+
+    header{position:sticky;top:0;z-index:20;background:#fff9efd9;backdrop-filter:blur(14px);border-bottom:1px solid #eadff0a6;transition:box-shadow .25s,background .25s}
+    header.is-stuck{box-shadow:var(--shadow-md);background:#fff9efef}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:96px}
+    .brand img{display:block;width:auto;height:clamp(52px,6.5vw,76px);object-fit:contain;border-radius:12px;filter:drop-shadow(0 4px 10px #24104f1f)}
+    .links{display:flex;gap:28px;font-weight:600;color:#584d6c}
+    .links a{position:relative;padding:4px 0}
+    .links a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--pink);border-radius:2px;transition:right .25s}
+    .links a:hover{color:var(--ink)}
+    .links a:hover::after{right:0}
+    .nav-right{display:flex;align-items:center;gap:14px}
+    .socials{display:flex;gap:9px}
+    .socials a{display:grid;place-items:center;width:42px;height:42px;background:#fff;border:1px solid var(--line);border-radius:50%;box-shadow:var(--shadow-sm);transition:transform .2s,background .2s,border-color .2s}
+    .socials a:hover{background:var(--yellow);border-color:var(--yellow);transform:translateY(-3px)}
+    .socials svg{width:19px;height:19px;fill:var(--ink)}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;font:inherit;font-weight:700;border-radius:999px;padding:15px 24px;transition:transform .2s,box-shadow .2s,background .2s}
+    .button:hover{transform:translateY(-3px)}
+    .button.primary{background:var(--pink);color:#fff;box-shadow:0 12px 26px #ed218440}
+    .button.primary:hover{background:var(--pink-deep);box-shadow:0 16px 32px #ed218455}
+    .button.secondary{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+    .button.secondary:hover{background:var(--ink);color:#fff}
+    .nav-cta{padding:13px 22px;font-size:.95rem}
+
+    /* ---------- hero ---------- */
+    .hero{position:relative;padding:clamp(48px,7vw,86px) 0 clamp(56px,7vw,92px);overflow:clip}
+    .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(8px);z-index:0}
+    .hero::before{width:min(460px,55vw);aspect-ratio:1;background:radial-gradient(circle at 35% 35%,#ffd52a7a,#ffd52a00 70%);right:-120px;top:-140px}
+    .hero::after{width:min(380px,46vw);aspect-ratio:1;background:radial-gradient(circle at 50% 50%,#24cfc555,#24cfc500 70%);left:-150px;bottom:-170px}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(32px,5vw,64px);align-items:center}
+    .hero h1{font-size:clamp(2.7rem,5.6vw,5rem);margin:20px 0 22px;max-width:17ch}
+    .hero h1 em{font-style:italic;color:var(--pink)}
+    .hero-lead{color:var(--muted);font-size:1.13rem;max-width:46ch;margin:0 0 30px}
+    .actions{display:flex;flex-wrap:wrap;gap:14px}
+    .hero-proof{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:34px;padding-top:26px;border-top:1px dashed var(--line)}
+    .hero-proof div{min-width:96px}
+    .hero-proof b{display:block;font-family:var(--display);font-size:1.5rem;line-height:1}
+    .hero-proof span{font-size:.82rem;color:var(--muted)}
+    .hero-photo{position:relative;border-radius:var(--r-xl) var(--r-xl) var(--r-xl) 12px;overflow:hidden;background:#efe6f7;box-shadow:18px 18px 0 var(--aqua),var(--shadow-lg);cursor:zoom-in}
+    .hero-photo img{display:block;width:100%;height:auto;aspect-ratio:1.34;object-fit:cover;object-position:center;transition:opacity .35s ease,transform .6s ease}
+    .hero-photo:hover img{transform:scale(1.03)}
+    .hero-badge{position:absolute;left:18px;bottom:18px;background:#ffffffee;color:var(--ink);border-radius:999px;padding:9px 16px;font-weight:700;font-size:.85rem;box-shadow:var(--shadow-md)}
+
+    /* ---------- marquee ---------- */
+    .moving-banner{background:#fff;border-block:1px solid var(--line);overflow:hidden;padding:16px 0;position:relative}
+    .moving-banner::before,.moving-banner::after{content:"";position:absolute;top:0;bottom:0;width:90px;z-index:2;pointer-events:none}
+    .moving-banner::before{left:0;background:linear-gradient(90deg,#fff,#fff0)}
+    .moving-banner::after{right:0;background:linear-gradient(270deg,#fff,#fff0)}
+    .top-banner{display:none}
+    .moving-track{display:flex;width:max-content;animation:slide 42s linear infinite}
+    .moving-banner:hover .moving-track{animation-play-state:paused}
+    .moving-item{position:relative;flex:none;width:200px;height:124px;margin:0 7px;border-radius:var(--r-md);overflow:hidden;background:#f1e8f2;cursor:zoom-in;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s}
+    .moving-item:hover{transform:translateY(-4px) scale(1.02);box-shadow:var(--shadow-md)}
+    .moving-item img{width:100%;height:100%;object-fit:cover}
+    .moving-item span{position:absolute;left:10px;bottom:9px;background:#24104fd9;color:#fff;font-weight:600;font-size:.76rem;border-radius:999px;padding:5px 11px;backdrop-filter:blur(4px)}
+    @keyframes slide{to{transform:translateX(-50%)}}
+
+    /* ---------- value strip ---------- */
+    .strip{background:linear-gradient(90deg,var(--yellow),#ffe375 50%,var(--yellow));padding:18px 0}
+    .strip-inner{display:flex;justify-content:center;flex-wrap:wrap;gap:14px 38px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:.8rem}
+    .strip b{color:var(--pink)}
+
+    /* ---------- sections ---------- */
+    section{padding:var(--section) 0}
+    .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:40px}
+    .section-head h2{font-size:clamp(2.1rem,4.2vw,3.5rem)}
+    .section-head p{max-width:42ch;color:var(--muted);margin:10px 0 0}
+
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:46px}
+    .card{display:flex;flex-direction:column;gap:14px;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:28px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s}
+    .card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+    .card:nth-child(2){background:#eefdf9;border-color:#cdf1ec}
+    .card:nth-child(3){background:#fff4fb;border-color:#f8d8ea}
+    .card:nth-child(4){background:#fffbea;border-color:#f6ebbd}
+    .card .icon{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:#ffffffcc;box-shadow:var(--shadow-sm);font-size:1.6rem}
+    .card h3{font-size:1.2rem}
+    .card p{color:var(--muted);font-size:.95rem;margin:0}
+
+    .catalog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+    .catalog-item{position:relative;margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm);cursor:zoom-in;transition:transform .25s,box-shadow .25s}
+    .catalog-item:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+    .catalog-item img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .5s ease}
+    .catalog-item:hover img{transform:scale(1.05)}
+    .catalog-item figcaption{padding:16px 18px 20px;font-weight:700;font-size:1rem}
+    .catalog-item small{display:block;color:var(--muted);font-weight:400;font-size:.86rem;margin-top:4px}
+    .catalog-item::after{content:"Ver y cotizar ✦";position:absolute;left:14px;top:14px;background:#24104fe6;color:#fff;font-size:.74rem;font-weight:600;padding:7px 13px;border-radius:999px;opacity:0;transform:translateY(-6px);transition:opacity .25s,transform .25s}
+    .catalog-item:hover::after{opacity:1;transform:none}
+    .catalog-cta{margin:0 0 40px;text-align:center}
+    .catalog-cta a{display:inline-flex;align-items:center;gap:9px;background:var(--pink);color:#fff;padding:14px 24px;border-radius:999px;font-weight:700;box-shadow:0 12px 26px #ed218440;transition:transform .2s,background .2s}
+    .catalog-cta a:hover{transform:translateY(-3px);background:var(--pink-deep)}
+
+    /* ---------- about / steps ---------- */
+    .about{position:relative;background:linear-gradient(160deg,var(--ink),#140830 70%);color:#fff;overflow:clip}
+    .about::after{content:"✦";position:absolute;right:6%;top:12%;font-size:13rem;color:#ffffff0d;line-height:1}
+    .about-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);align-items:center}
+    .about h2{font-size:clamp(2.1rem,4.2vw,3.6rem);margin:18px 0 20px}
+    .about p{color:#d6cae9;font-size:1.06rem;margin:0}
+    .about .eyebrow{color:var(--yellow)}
+    .steps{display:grid;gap:14px}
+    .step{display:flex;gap:18px;align-items:flex-start;padding:22px;border:1px solid #ffffff24;border-radius:var(--r-md);background:#ffffff0d;transition:background .25s,transform .25s}
+    .step:hover{background:#ffffff16;transform:translateX(4px)}
+    .step strong{display:grid;place-items:center;flex:none;width:38px;height:38px;border-radius:50%;background:var(--pink);font-family:var(--display);box-shadow:0 8px 18px #ed218455}
+    .step h3{font-size:1.1rem;margin-bottom:4px}
+    .step p{font-size:.94rem;color:#c3b7d8}
+
+    /* ---------- contact ---------- */
+    .contact{background:linear-gradient(135deg,var(--pink),var(--pink-deep));color:#fff;padding:clamp(52px,6vw,76px) 0}
+    .contact-grid{display:flex;justify-content:space-between;align-items:center;gap:30px}
+    .contact h2{font-size:clamp(2.1rem,4.2vw,3.6rem);margin-bottom:10px}
+    .contact p{color:#ffe8f5;margin:0}
+    .wa{display:inline-flex;align-items:center;gap:11px;background:#25d366;color:#fff;border-radius:999px;padding:18px 28px;font-weight:700;white-space:nowrap;box-shadow:0 14px 28px #58042f66;transition:transform .2s,box-shadow .2s}
+    .wa:hover{transform:translateY(-3px);box-shadow:0 18px 34px #58042f80}
+    .wa svg{width:22px;height:22px;fill:#fff}
+
+    /* ---------- footer ---------- */
+    footer{background:var(--ink);color:#b9aed0;padding:44px 0;font-size:.92rem}
+    .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+    .footer-brand{font-family:var(--display);color:#fff;font-size:1.15rem;font-weight:800}
+    footer a{color:var(--yellow);font-weight:600}
+    footer a:hover{text-decoration:underline}
+    .footer-links{display:flex;gap:16px;flex-wrap:wrap}
+
+    /* ---------- floating whatsapp ---------- */
+    .wa-float{position:fixed;left:18px;bottom:18px;z-index:35;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:#25d366;box-shadow:0 12px 28px #0d6b3466;transition:transform .2s}
+    .wa-float:hover{transform:scale(1.08)}
+    .wa-float svg{width:30px;height:30px;fill:#fff}
+
+    /* ---------- lightbox ---------- */
+    .lightbox{display:none;position:fixed;inset:0;z-index:50;background:#1a0b38e8;backdrop-filter:blur(6px);padding:22px;align-items:center;justify-content:center}
+    .lightbox.open{display:flex;animation:fade .2s ease}
+    @keyframes fade{from{opacity:0}}
+    .lightbox-card{position:relative;width:min(700px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:var(--r-lg);padding:18px;text-align:center;box-shadow:var(--shadow-lg)}
+    .lightbox-card img{display:block;max-width:100%;max-height:66vh;object-fit:contain;margin:auto;border-radius:var(--r-md)}
+    .lightbox-card h3{margin:16px 0 4px;font-size:1.25rem}
+    .lightbox-close{position:absolute;right:14px;top:14px;display:grid;place-items:center;width:38px;height:38px;border:0;border-radius:50%;background:#fff;color:var(--ink);font-size:1.4rem;cursor:pointer;box-shadow:var(--shadow-sm)}
+    .lightbox-close:hover{background:var(--yellow)}
+    .lightbox-card .button{margin:14px auto 4px}
+
+    /* ---------- reveal on scroll ---------- */
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:none}
+
+    /* ---------- responsive ---------- */
+    @media(max-width:980px){
+      .links{display:none}
+      .cards{grid-template-columns:repeat(2,1fr)}
+      .hero-grid,.about-grid{grid-template-columns:1fr}
+      .hero-photo{order:-1}
+      nav{min-height:84px}
+    }
+    @media(max-width:700px){
+      body{font-size:16px}
+      .wrap{width:min(1180px,calc(100% - 30px))}
+      .socials{display:none}
+      .hero-photo{border-radius:24px 24px 24px 10px;box-shadow:10px 10px 0 var(--aqua),var(--shadow-md)}
+      .hero-photo img{aspect-ratio:4/5}
+      .contact-grid,.footer-inner{flex-direction:column;align-items:flex-start}
+      .section-head{flex-direction:column;align-items:flex-start;margin-bottom:28px}
+      .catalog-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+      .catalog-item figcaption{padding:12px 13px 16px;font-size:.92rem}
+      .catalog-item::after{display:none}
+      .cards{gap:12px}
+      .card{padding:20px}
+      .topbar .wrap span{display:none}
+      .topbar .wrap{justify-content:center}
+      .strip-inner{gap:10px 20px;font-size:.72rem}
+      .moving-item{width:158px;height:102px}
+      .wa-float{width:52px;height:52px;left:14px;bottom:76px}
+      .button{padding:14px 20px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+      html{scroll-behavior:auto}
+      .reveal{opacity:1;transform:none}
+    }
   </style>
-</head><style>.hero-photo img{visibility:hidden}</style><script>document.addEventListener('DOMContentLoaded',function(){var hero=document.querySelector('.hero-photo img');if(hero){hero.src='imagenes/a.jpeg';hero.style.visibility='visible';}});</script>
-<body><script>document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('a').forEach(function(a){var raw=a.getAttribute('href')||'';if(raw.indexOf('wa.me/50686458480?text=')!==-1){a.href='https://api.whatsapp.com/send?phone=50686458480&text='+raw.split('?text=')[1]}else if(raw.indexOf('api.whatsapp.com/send?phone=50686458480?text=')!==-1){a.href=raw.replace('?phone=50686458480?text=','?phone=50686458480&text=')}});document.querySelectorAll('a[href*="tiktok.com"]').forEach(function(a){a.href='https://www.tiktok.com/@sublimacionduran07042018'});var cta=document.querySelector('.catalog-cta a');if(cta){cta.textContent='Solicitar catálogo completo por WhatsApp →';cta.href='https://api.whatsapp.com/send?phone=50686458480&text='+encodeURIComponent('Hola Sublimación Durán, quiero solicitar el catálogo completo para descargarlo')}var hero=document.querySelector('.hero-photo img');if(hero){var fotos=['imagenes/a.jpeg','imagenes/b.jpeg','imagenes/e.jpeg','imagenes/g.jpeg','imagenes/o.jpeg','imagenes/v.jpeg'],pos=0;hero.style.transition='opacity .22s ease';setInterval(function(){pos=(pos+1)%fotos.length;hero.style.opacity='0';setTimeout(function(){hero.src=fotos[pos];hero.style.opacity='1'},220)},5000)}});</script>
-  <div class="topbar"><div class="wrap"><span>Diseños que se sienten como regalo</span><a href="https://wa.me/50686458480?text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20cotizar%20un%20producto%20personalizado">Escríbenos por WhatsApp →</a></div></div>
-  <header><div class="wrap"><nav><a class="brand" href="#inicio"><img src="logo.png" alt="Logo de Sublimación Durán"><span>Sublimación<br><small>Durán</small></span></a><div class="links"><a href="#productos">Productos</a><a href="#proceso">Cómo pedir</a><a href="#contacto">Contacto</a></div><div class="socials" aria-label="Redes sociales"><a href="https://www.facebook.com/share/p/1PWKQ38szm/" target="_blank" rel="noopener" aria-label="Facebook">f</a><a href="https://www.instagram.com/reel/C2c-gvQudQ5/?stkn=dTJxOTJ2NHlva2k5" target="_blank" rel="noopener" aria-label="Instagram">ig</a><a href="https://www.tiktok.com/@sp022383" target="_blank" rel="noopener" aria-label="TikTok">tk</a></div><a class="nav-cta" href="https://wa.me/50686458480?text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20cotizar">Cotizar ahora</a></nav></div></header>
+</head>
+<body>
+  <div class="topbar"><div class="wrap">
+    <span>✦ Diseños que se sienten como regalo · Costa Rica</span>
+    <a href="https://api.whatsapp.com/send?phone=50686458480&text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20cotizar%20un%20producto%20personalizado" target="_blank" rel="noopener">Escríbenos por WhatsApp →</a>
+  </div></div>
+
+  <header id="site-header"><div class="wrap"><nav>
+    <a class="brand" href="#inicio"><img src="logo.png" alt="Sublimación Durán" width="200" height="76"></a>
+    <div class="links">
+      <a href="#productos">Productos</a>
+      <a href="#proceso">Cómo pedir</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div class="nav-right">
+      <div class="socials" aria-label="Redes sociales">
+        <a href="https://www.facebook.com/share/p/1PWKQ38szm/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.3-1.5 1.6-1.5h1.6V4.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.3H7.6V14h2.3v8h3.6z"/></svg></a>
+        <a href="https://www.instagram.com/reel/C2c-gvQudQ5/?stkn=dTJxOTJ2NHlva2k5" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.3A6.5 6.5 0 1 0 18.5 12A6.5 6.5 0 0 0 12 5.5zm0 10.7A4.2 4.2 0 1 1 16.2 12A4.2 4.2 0 0 1 12 16.2zm6.8-10.9a1.5 1.5 0 1 1-1.5-1.5a1.5 1.5 0 0 1 1.5 1.5z"/></svg></a>
+        <a href="https://www.tiktok.com/@sublimacionduran07042018" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.8a5 5 0 0 1-1.1-3.3h-3v12.2a2.6 2.6 0 1 1-1.9-2.5V9a5.6 5.6 0 1 0 4.9 5.6V9.9a8 8 0 0 0 4.1 1.2V8a5 5 0 0 1-3-2.2z"/></svg></a>
+      </div>
+      <a class="button primary nav-cta" href="https://api.whatsapp.com/send?phone=50686458480&text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20cotizar" target="_blank" rel="noopener">Cotizar ahora</a>
+    </div>
+  </nav></div></header>
+
   <main id="inicio">
-    <div class="moving-banner top-banner" aria-label="Productos destacados"><div class="moving-track"><figure class="moving-item"><img src="imagenes/3.jpeg" alt="Productos personalizados"><span>Personalizados</span></figure><figure class="moving-item"><img src="imagenes/4.jpeg" alt="Placas para vehículos"><span>Placas</span></figure><figure class="moving-item"><img src="imagenes/6.jpeg" alt="Collares de acero"><span>Collares</span></figure><figure class="moving-item"><img src="imagenes/8.jpeg" alt="Espejos"><span>Espejos</span></figure><figure class="moving-item"><img src="imagenes/9.jpeg" alt="Llaveros"><span>Llaveros</span></figure><figure class="moving-item"><img src="imagenes/10.jpeg" alt="Camisas"><span>Camisas</span></figure><figure class="moving-item"><img src="imagenes/11.jpeg" alt="Cojines"><span>Cojines</span></figure><figure class="moving-item"><img src="imagenes/12.jpeg" alt="Placas para mascotas"><span>Mascotas</span></figure></div></div><section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Hecho para celebrar</div><h1>Lo que sientes, <em>hecho detalle.</em></h1><p>Convertimos tus recuerdos, tus historias y tus sentimientos en regalos que se quedan para siempre.</p><div class="actions"><a class="button primary" href="https://wa.me/50686458480?text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20me%20gustar%C3%ADa%20hacer%20un%20pedido">Quiero personalizar ✦</a><a class="button secondary" href="#productos">Ver productos</a></div></div><div class="hero-photo"><img src="hero-products.png" alt="Productos personalizados de Sublimación Durán"></div></div></section>
-    <div class="moving-banner" aria-label="Productos destacados"><div class="moving-track"><figure class="moving-item"><img src="imagenes/3.jpeg" alt="Productos personalizados"><span>Personalizados</span></figure><figure class="moving-item"><img src="imagenes/4.jpeg" alt="Placas para vehículos"><span>Placas</span></figure><figure class="moving-item"><img src="imagenes/6.jpeg" alt="Collares de acero"><span>Collares</span></figure><figure class="moving-item"><img src="imagenes/8.jpeg" alt="Espejos"><span>Espejos</span></figure><figure class="moving-item"><img src="imagenes/9.jpeg" alt="Llaveros"><span>Llaveros</span></figure><figure class="moving-item"><img src="imagenes/10.jpeg" alt="Camisas"><span>Camisas</span></figure><figure class="moving-item"><img src="imagenes/11.jpeg" alt="Cojines"><span>Cojines</span></figure><figure class="moving-item"><img src="imagenes/12.jpeg" alt="Placas para mascotas"><span>Mascotas</span></figure><figure class="moving-item"><img src="imagenes/3.jpeg" alt="Productos personalizados"><span>Personalizados</span></figure><figure class="moving-item"><img src="imagenes/4.jpeg" alt="Placas para vehículos"><span>Placas</span></figure><figure class="moving-item"><img src="imagenes/6.jpeg" alt="Collares de acero"><span>Collares</span></figure><figure class="moving-item"><img src="imagenes/8.jpeg" alt="Espejos"><span>Espejos</span></figure><figure class="moving-item"><img src="imagenes/9.jpeg" alt="Llaveros"><span>Llaveros</span></figure><figure class="moving-item"><img src="imagenes/10.jpeg" alt="Camisas"><span>Camisas</span></figure><figure class="moving-item"><img src="imagenes/11.jpeg" alt="Cojines"><span>Cojines</span></figure><figure class="moving-item"><img src="imagenes/12.jpeg" alt="Placas para mascotas"><span>Mascotas</span></figure></div></div><div class="strip"><div class="wrap strip-inner"><span><b>✦</b> Para regalar</span><span><b>✦</b> Para emprender</span><span><b>✦</b> Para recordar</span><span><b>✦</b> Hecho con amor</span></div></div>
-    <section id="productos"><div class="wrap"><div class="section-head"><h2>Un detalle para<br>cada historia.</h2><p>Cuéntanos qué tienes en mente y lo convertimos en una pieza hecha especialmente para ti.</p></div><div class="cards"><article class="card"><div class="icon">☕</div><div><h3>Tazas</h3><p>Para el café de cada mañana, con tu diseño favorito.</p></div></article><article class="card"><div class="icon">👕</div><div><h3>Camisas</h3><p>Diseños para equipos, familias, eventos y marcas.</p></div></article><article class="card"><div class="icon">🔑</div><div><h3>Llaveros</h3><p>Pequeños recuerdos que te acompañan a todas partes.</p></div></article><article class="card"><div class="icon">🎁</div><div><h3>Mucho más</h3><p>Botellas, estuches, adornos, bufandas y tus ideas.</p></div></article></div><div class="catalog-grid"><figure class="catalog-item"><img src="imagenes/3.jpeg" alt="Productos personalizados"><figcaption>Productos personalizados<small>Diseños para cada ocasión</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/4.jpeg" alt="Placas para vehículos"><figcaption>Placas personalizadas<small>Para carro, moto y camión</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/5.jpeg" alt="Cerámicas personalizadas"><figcaption>Cerámicas<small>Recuerdos para decorar</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/6.jpeg" alt="Collares personalizados"><figcaption>Collares de acero<small>Detalles con estilo</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/7.jpeg" alt="Collares para parejas"><figcaption>Collares para parejas<small>Una conexión especial</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/8.jpeg" alt="Espejos personalizados"><figcaption>Espejos<small>Compactos y únicos</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/9.jpeg" alt="Llaveros personalizados"><figcaption>Llaveros<small>Pequeños detalles</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/10.jpeg" alt="Camisas personalizadas"><figcaption>Camisas<small>Para empresas y eventos</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/11.jpeg" alt="Cojines personalizados"><figcaption>Cojines con foto<small>Recuerdos que abrazan</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/12.jpeg" alt="Placas para mascotas"><figcaption>Placas para mascotas<small>Ellos también son familia</small></figcaption></figure></div><div class="catalog-cta"><a href="https://wa.me/50686458480?text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20ver%20el%20cat%C3%A1logo%20completo">¿Buscas algo más? Pregúntanos por WhatsApp →</a></div></div></section>
-    <section class="about" id="proceso"><div class="wrap about-grid"><div><div class="eyebrow">De tu imaginación a tus manos</div><h2>Así creamos algo que se parece a ti.</h2><p>Trabajamos cada pedido con atención al detalle para que el resultado tenga tus colores, tu mensaje y tu esencia.</p></div><div class="steps"><div class="step"><strong>1</strong><div><h3>Nos cuentas tu idea</h3><p>Escríbenos por WhatsApp con el producto, cantidad y diseño que imaginas.</p></div></div><div class="step"><strong>2</strong><div><h3>Preparamos tu propuesta</h3><p>Coordinamos los detalles contigo antes de producir.</p></div></div><div class="step"><strong>3</strong><div><h3>Lo hacemos realidad</h3><p>Recibes un producto alegre, personalizado y listo para regalar.</p></div></div></div></div></section>
-    <section class="contact" id="contacto"><div class="wrap contact-grid"><div><h2>¿Ya tienes una idea?</h2><p>Hablemos de tu próximo detalle personalizado.</p></div><a class="wa" href="https://wa.me/50686458480?text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20hacer%20una%20cotizaci%C3%B3n"><span>◉</span>Escribir por WhatsApp</a></div></section>
+    <div class="moving-banner top-banner" aria-hidden="true"><div class="moving-track"></div></div>
+
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Hecho para celebrar</div>
+          <h1>Lo que sientes, <em>hecho detalle.</em></h1>
+          <p class="hero-lead">Convertimos tus recuerdos, tus historias y tus sentimientos en regalos personalizados que se quedan para siempre.</p>
+          <div class="actions">
+            <a class="button primary" href="https://api.whatsapp.com/send?phone=50686458480&text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20me%20gustar%C3%ADa%20hacer%20un%20pedido" target="_blank" rel="noopener">Quiero personalizar ✦</a>
+            <a class="button secondary" href="#productos">Ver productos</a>
+          </div>
+          <div class="hero-proof">
+            <div><b>+30</b><span>tipos de productos</span></div>
+            <div><b>2018</b><span>creando detalles</span></div>
+            <div><b>100%</b><span>hecho a tu medida</span></div>
+          </div>
+        </div>
+        <figure class="hero-photo" style="margin:0">
+          <img src="catalogo/a.jpeg" alt="Productos personalizados de Sublimación Durán" width="760" height="535">
+          <figcaption class="hero-badge">Pedidos por WhatsApp ✦ Entrega en todo el país</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="moving-banner" aria-label="Productos destacados"><div class="moving-track"></div></div>
+
+    <div class="strip"><div class="wrap strip-inner">
+      <span><b>✦</b> Para regalar</span>
+      <span><b>✦</b> Para emprender</span>
+      <span><b>✦</b> Para recordar</span>
+      <span><b>✦</b> Hecho con amor</span>
+    </div></div>
+
+    <section id="productos">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow">Catálogo</div>
+            <h2>Un detalle para<br>cada historia.</h2>
+          </div>
+          <p>Cuéntanos qué tienes en mente y lo convertimos en una pieza hecha especialmente para ti.</p>
+        </div>
+
+        <div class="catalog-cta reveal"><a href="https://api.whatsapp.com/send?phone=50686458480&text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20solicitar%20el%20cat%C3%A1logo%20completo%20para%20descargarlo" target="_blank" rel="noopener">Solicitar catálogo completo por WhatsApp →</a></div>
+
+        <div class="cards reveal">
+          <article class="card"><div class="icon">☕</div><div><h3>Tazas</h3><p>Para el café de cada mañana, con tu diseño favorito.</p></div></article>
+          <article class="card"><div class="icon">👕</div><div><h3>Camisas</h3><p>Diseños para equipos, familias, eventos y marcas.</p></div></article>
+          <article class="card"><div class="icon">🔑</div><div><h3>Llaveros</h3><p>Pequeños recuerdos que te acompañan a todas partes.</p></div></article>
+          <article class="card"><div class="icon">🎁</div><div><h3>Mucho más</h3><p>Botellas, estuches, adornos, bufandas y tus ideas.</p></div></article>
+        </div>
+
+        <div class="catalog-grid"></div>
+      </div>
+    </section>
+
+    <section class="about" id="proceso">
+      <div class="wrap about-grid">
+        <div class="reveal">
+          <div class="eyebrow">De tu imaginación a tus manos</div>
+          <h2>Así creamos algo que se parece a ti.</h2>
+          <p>Trabajamos cada pedido con atención al detalle para que el resultado tenga tus colores, tu mensaje y tu esencia.</p>
+        </div>
+        <div class="steps reveal">
+          <div class="step"><strong>1</strong><div><h3>Nos cuentas tu idea</h3><p>Escríbenos por WhatsApp con el producto, cantidad y diseño que imaginas.</p></div></div>
+          <div class="step"><strong>2</strong><div><h3>Preparamos tu propuesta</h3><p>Coordinamos los detalles contigo antes de producir.</p></div></div>
+          <div class="step"><strong>3</strong><div><h3>Lo hacemos realidad</h3><p>Recibes un producto alegre, personalizado y listo para regalar.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="wrap contact-grid">
+        <div><h2>¿Ya tienes una idea?</h2><p>Hablemos de tu próximo detalle personalizado.</p></div>
+        <a class="wa" href="https://api.whatsapp.com/send?phone=50686458480&text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20hacer%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a11 11 0 0 1-4.6-3.1c-1.3-1.5-1.8-2.8-1.9-3.3-.1-.5 0-1.1.3-1.5.3-.4.6-.5.8-.6h.6c.2 0 .4 0 .6.4l.8 1.8c.1.2.1.4 0 .6l-.4.6c-.1.2-.2.3 0 .6.3.5.8 1.1 1.3 1.5.6.5 1.1.8 1.5.9.3.1.5.1.6-.1l.7-.8c.2-.2.3-.2.6-.1l1.7.9c.3.2.4.3.4.5s-.1.9-.3 1.3z"/></svg>Escribir por WhatsApp</a>
+      </div>
+    </section>
   </main>
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada del producto"><div class="lightbox-card"><button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">×</button><img id="lightbox-image" alt="Producto ampliado"><h3 id="lightbox-title">Producto personalizado</h3><a id="lightbox-buy" class="button primary" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div></div>
-  <footer><div class="wrap footer-inner"><div class="footer-brand">Sublimación Durán ✦</div><div>Personalización con corazón · Costa Rica</div><div><a href="https://www.instagram.com/reel/C2c-gvQudQ5/?stkn=dTJxOTJ2NHlva2k5" target="_blank" rel="noopener">Instagram ↗</a> <span aria-hidden="true">·</span> <a href="https://www.tiktok.com/@sublimacionduran07042018" target="_blank" rel="noopener">TikTok ↗</a> <span aria-hidden="true">·</span> <a href="https://www.facebook.com/share/p/1PWKQ38szm/" target="_blank" rel="noopener">Facebook ↗</a></div></div></footer>
-  <script>const box=document.getElementById('lightbox'),big=document.getElementById('lightbox-image'),title=document.getElementById('lightbox-title'),buy=document.getElementById('lightbox-buy');document.querySelectorAll('.moving-item,.catalog-item').forEach(item=>item.addEventListener('click',()=>{const img=item.querySelector('img');const label=item.querySelector('figcaption')?.firstChild?.textContent?.trim()||item.querySelector('span')?.textContent||'producto personalizado';big.src=img.src;big.alt=img.alt;title.textContent=label;buy.href='https://wa.me/50686458480?text='+encodeURIComponent('Hola Sublimación Durán, quiero cotizar: '+label);box.classList.add('open')}));document.getElementById('lightbox-close').addEventListener('click',()=>box.classList.remove('open'));box.addEventListener('click',e=>{if(e.target===box)box.classList.remove('open')});</script>
-<script>const nuevas=[['a.jpeg','Mini cojines'],['b.jpeg','Cojines y bolsos'],['c.jpeg','Gorras para fiestas'],['d.jpeg','Vasos de colores'],['e.jpeg','Placas para mascotas'],['f.jpeg','Rompecabezas'],['g.jpeg','Tazas personalizadas'],['h.jpeg','Jarras cerveceras'],['i.jpeg','Vasos plásticos'],['j.jpeg','Popis gigantes'],['k.jpeg','Tequileros'],['l.jpeg','Loncheras'],['m.jpeg','Regalos para mamá'],['n.jpeg','Tazas para mamá'],['ñ.jpeg','Tazas mágicas'],['o.jpeg','Camisas personalizadas'],['p.jpeg','Llaveros con foto'],['q.jpeg','Estuches para celular'],['r.jpeg','Magnéticos acrílicos'],['u.jpeg','Pulseras personalizadas'],['v.jpeg','Bolsos personalizados']];const grid=document.querySelector('.catalog-grid');nuevas.forEach(([file,label])=>{const f=document.createElement('figure');f.className='catalog-item';f.innerHTML='<img src="imagenes/'+encodeURIComponent(file)+'" alt="'+label+'"><figcaption>'+label+'<small>Personaliza con tu diseño</small></figcaption>';grid.appendChild(f)});document.querySelectorAll('.moving-item,.catalog-item').forEach(item=>item.addEventListener('click',()=>{const img=item.querySelector('img');const label=item.querySelector('figcaption')?.firstChild?.textContent?.trim()||item.querySelector('span')?.textContent||'producto personalizado';big.src=img.src;big.alt=img.alt;title.textContent=label;buy.href='https://api.whatsapp.com/send?phone=50686458480&text='+encodeURIComponent('Hola Sublimación Durán, quiero cotizar: '+label);box.classList.add('open')}));const cta=document.querySelector('.catalog-cta'),head=document.querySelector('#productos .section-head');if(cta&&head)head.after(cta);document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a=>{a.href=a.href.replace('https://wa.me/50686458480','https://api.whatsapp.com/send?phone=50686458480')});</script>
-<style>.cards{display:none}.brand img{width:280px;height:108px;object-fit:contain;border-radius:0;filter:drop-shadow(0 5px 8px #24104f18)}.brand{gap:0}.brand span{display:none}nav{height:122px}.catalog-cta{margin-top:20px;text-align:center}.catalog-cta a{display:inline-flex;background:var(--pink);color:#fff;padding:13px 20px;border-radius:999px;font-weight:900;box-shadow:0 8px 18px #ed218433}@media(max-width:850px){.brand img{width:220px;height:88px}nav{height:98px}}@media(max-width:500px){.brand img{width:154px;height:64px}nav{height:74px}}</style>
-<script>(function(){document.querySelectorAll('a').forEach(function(a){var raw=a.getAttribute('href')||'';if(raw.indexOf('wa.me/50686458480?text=')!==-1){a.href='https://api.whatsapp.com/send?phone=50686458480&text='+raw.split('?text=')[1]}else if(raw.indexOf('api.whatsapp.com/send?phone=50686458480?text=')!==-1){a.href=raw.replace('?phone=50686458480?text=','?phone=50686458480&text=')}});document.querySelectorAll('a[href*="tiktok.com"]').forEach(function(a){a.href='https://www.tiktok.com/@sublimacionduran07042018'});var cta=document.querySelector('.catalog-cta a');if(cta){cta.textContent='Solicitar catálogo completo por WhatsApp →';cta.href='https://api.whatsapp.com/send?phone=50686458480&text='+encodeURIComponent('Hola Sublimación Durán, quiero solicitar el catálogo completo para descargarlo')}var hero=document.querySelector('.hero-photo img');if(hero){var fotos=['imagenes/a.jpeg','imagenes/b.jpeg','imagenes/e.jpeg','imagenes/g.jpeg','imagenes/o.jpeg','imagenes/v.jpeg'];var pos=0;setInterval(function(){pos=(pos+1)%fotos.length;hero.style.opacity='0';setTimeout(function(){hero.src=fotos[pos];hero.style.opacity='1'},220)},5000)}})();</script>
-<script>document.addEventListener('DOMContentLoaded',function(){var hero=document.querySelector('.hero-photo img');if(hero){hero.style.cursor='zoom-in';hero.addEventListener('click',function(){var modal=document.getElementById('lightbox'),photo=document.getElementById('lightbox-image'),caption=document.getElementById('lightbox-title'),action=document.getElementById('lightbox-buy');photo.src=hero.src;photo.alt=hero.alt;caption.textContent='Producto personalizado';action.href='https://api.whatsapp.com/send?phone=50686458480&text='+encodeURIComponent('Hola Sublimación Durán, quiero cotizar el producto de la portada');modal.classList.add('open')})}});</script>
-<style>.brand img{width:340px;height:124px}.socials{gap:12px}.socials a{width:50px;height:50px;font-size:1rem;letter-spacing:-.04em}.socials a[aria-label="Facebook"]{font-size:1.35rem}.socials a[aria-label="Instagram"],.socials a[aria-label="TikTok"]{font-weight:950}@media(max-width:850px){.brand img{width:250px;height:96px}}@media(max-width:500px){.brand img{width:190px;height:76px}.socials a{width:42px;height:42px}}</style>
-<script>(function(){var grid=document.querySelector('.catalog-grid');if(!grid)return;[['15.jpeg','Llaveros con foto'],['16.jpeg','Camisetas familiares'],['17.jpeg','Mamelucos para bebé']].forEach(function(item){if(grid.querySelector('img[src*="imagenes/'+item[0]+'"]'))return;var f=document.createElement('figure');f.className='catalog-item';f.innerHTML='<img src="imagenes/'+encodeURIComponent(item[0])+'" alt="'+item[1]+'"><figcaption>'+item[1]+'<small>Personaliza con tu diseño</small></figcaption>';grid.appendChild(f)})})();</script>
-<script>document.querySelectorAll('.catalog-item').forEach(function(item){var img=item.querySelector('img');if(!img||!['15.jpeg','16.jpeg','17.jpeg'].some(function(n){return img.src.indexOf('/'+n)!==-1}))return;item.addEventListener('click',function(){var modal=document.getElementById('lightbox');document.getElementById('lightbox-image').src=img.src;document.getElementById('lightbox-image').alt=img.alt;document.getElementById('lightbox-title').textContent=item.querySelector('figcaption')?.firstChild?.textContent?.trim()||'Producto personalizado';document.getElementById('lightbox-buy').href='https://api.whatsapp.com/send?phone=50686458480&text='+encodeURIComponent('Hola Sublimación Durán, quiero cotizar: '+img.alt);modal.classList.add('open')})});</script>
-<script>(function(){document.querySelectorAll('.footer-inner').forEach(function(f){if(f.querySelector('.email-contact'))return;var a=document.createElement('a');a.className='email-contact';a.href='mailto:sublimacionduran23@gmail.com';a.textContent='sublimacionduran23@gmail.com';a.style.fontWeight='800';a.style.color='var(--pink)';f.appendChild(a)})})();</script>
-</body><script src="halloween-online.js?v=5"></script><script src="bebe-seccion.js?v=6"></script><script>(function(){function fix(){document.querySelectorAll('img[src^="imagenes/"]').forEach(function(img){var n=img.getAttribute('src').slice(9);if(!/^(halloween-|bebe-|fondo-halloween|terror-halloween|24-tazas-|25-tazas-|26-vasos-|27-botellas-)/.test(n))img.src='catalogo/'+n})}fix();setInterval(fix,250);})();</script></html>
+
+  <a class="wa-float" href="https://api.whatsapp.com/send?phone=50686458480&text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20tengo%20una%20consulta" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a11 11 0 0 1-4.6-3.1c-1.3-1.5-1.8-2.8-1.9-3.3-.1-.5 0-1.1.3-1.5.3-.4.6-.5.8-.6h.6c.2 0 .4 0 .6.4l.8 1.8c.1.2.1.4 0 .6l-.4.6c-.1.2-.2.3 0 .6.3.5.8 1.1 1.3 1.5.6.5 1.1.8 1.5.9.3.1.5.1.6-.1l.7-.8c.2-.2.3-.2.6-.1l1.7.9c.3.2.4.3.4.5s-.1.9-.3 1.3z"/></svg></a>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada del producto">
+    <div class="lightbox-card">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">×</button>
+      <img id="lightbox-image" alt="Producto ampliado">
+      <h3 id="lightbox-title">Producto personalizado</h3>
+      <a id="lightbox-buy" class="button primary" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+    </div>
+  </div>
+
+  <footer><div class="wrap footer-inner">
+    <div class="footer-brand">Sublimación Durán ✦</div>
+    <div>Personalización con corazón · Costa Rica</div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/reel/C2c-gvQudQ5/?stkn=dTJxOTJ2NHlva2k5" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://www.tiktok.com/@sublimacionduran07042018" target="_blank" rel="noopener">TikTok ↗</a>
+      <a href="https://www.facebook.com/share/p/1PWKQ38szm/" target="_blank" rel="noopener">Facebook ↗</a>
+      <a href="mailto:sublimacionduran23@gmail.com">sublimacionduran23@gmail.com</a>
+    </div>
+  </div></footer>
+
+  <script>
+  (function(){
+    var WA = 'https://api.whatsapp.com/send?phone=50686458480&text=';
+
+    /* ---- datos del catálogo (carpeta catalogo/) ---- */
+    var featured = [
+      ['3.jpeg','Personalizados'],['4.jpeg','Placas'],['6.jpeg','Collares'],['8.jpeg','Espejos'],
+      ['9.jpeg','Llaveros'],['10.jpeg','Camisas'],['11.jpeg','Cojines'],['12.jpeg','Mascotas']
+    ];
+    var catalog = [
+      ['3.jpeg','Productos personalizados','Diseños para cada ocasión'],
+      ['4.jpeg','Placas personalizadas','Para carro, moto y camión'],
+      ['5.jpeg','Cerámicas','Recuerdos para decorar'],
+      ['6.jpeg','Collares de acero','Detalles con estilo'],
+      ['7.jpeg','Collares para parejas','Una conexión especial'],
+      ['8.jpeg','Espejos','Compactos y únicos'],
+      ['9.jpeg','Llaveros','Pequeños detalles'],
+      ['10.jpeg','Camisas','Para empresas y eventos'],
+      ['11.jpeg','Cojines con foto','Recuerdos que abrazan'],
+      ['12.jpeg','Placas para mascotas','Ellos también son familia'],
+      ['15.jpeg','Llaveros con foto','Personaliza con tu diseño'],
+      ['16.jpeg','Camisetas familiares','Personaliza con tu diseño'],
+      ['17.jpeg','Mamelucos para bebé','Personaliza con tu diseño'],
+      ['a.jpeg','Mini cojines','Personaliza con tu diseño'],
+      ['b.jpeg','Cojines y bolsos','Personaliza con tu diseño'],
+      ['c.jpeg','Gorras para fiestas','Personaliza con tu diseño'],
+      ['d.jpeg','Vasos de colores','Personaliza con tu diseño'],
+      ['e.jpeg','Placas para mascotas','Personaliza con tu diseño'],
+      ['f.jpeg','Rompecabezas','Personaliza con tu diseño'],
+      ['g.jpeg','Tazas personalizadas','Personaliza con tu diseño'],
+      ['h.jpeg','Jarras cerveceras','Personaliza con tu diseño'],
+      ['i.jpeg','Vasos plásticos','Personaliza con tu diseño'],
+      ['j.jpeg','Popis gigantes','Personaliza con tu diseño'],
+      ['k.jpeg','Tequileros','Personaliza con tu diseño'],
+      ['l.jpeg','Loncheras','Personaliza con tu diseño'],
+      ['m.jpeg','Regalos para mamá','Personaliza con tu diseño'],
+      ['n.jpeg','Tazas para mamá','Personaliza con tu diseño'],
+      ['ñ.jpeg','Tazas mágicas','Personaliza con tu diseño'],
+      ['o.jpeg','Camisas personalizadas','Personaliza con tu diseño'],
+      ['p.jpeg','Llaveros con foto','Personaliza con tu diseño'],
+      ['q.jpeg','Estuches para celular','Personaliza con tu diseño'],
+      ['r.jpeg','Magnéticos acrílicos','Personaliza con tu diseño'],
+      ['u.jpeg','Pulseras personalizadas','Personaliza con tu diseño'],
+      ['v.jpeg','Bolsos personalizados','Personaliza con tu diseño']
+    ];
+
+    /* ---- carruseles ---- */
+    document.querySelectorAll('.moving-track').forEach(function(track){
+      var html = featured.map(function(it){
+        return '<figure class="moving-item"><img src="catalogo/'+encodeURIComponent(it[0])+'" alt="'+it[1]+'" loading="lazy" decoding="async"><span>'+it[1]+'</span></figure>';
+      }).join('');
+      track.innerHTML = html + html; /* duplicado para el loop infinito */
+    });
+
+    /* ---- grid del catálogo ---- */
+    var grid = document.querySelector('.catalog-grid');
+    grid.innerHTML = catalog.map(function(it){
+      return '<figure class="catalog-item"><img src="catalogo/'+encodeURIComponent(it[0])+'" alt="'+it[1]+'" loading="lazy" decoding="async"><figcaption>'+it[1]+'<small>'+it[2]+'</small></figcaption></figure>';
+    }).join('');
+
+    /* ---- lightbox (delegación: cubre también las secciones añadidas por otros scripts) ---- */
+    var box = document.getElementById('lightbox'),
+        big = document.getElementById('lightbox-image'),
+        title = document.getElementById('lightbox-title'),
+        buy = document.getElementById('lightbox-buy'),
+        lastFocus = null;
+
+    function openBox(src, alt, label){
+      lastFocus = document.activeElement;
+      big.src = src; big.alt = alt || label;
+      title.textContent = label;
+      buy.href = WA + encodeURIComponent('Hola Sublimación Durán, quiero cotizar: ' + label);
+      box.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('lightbox-close').focus();
+    }
+    function closeBox(){
+      box.classList.remove('open');
+      document.body.style.overflow = '';
+      if (lastFocus) lastFocus.focus();
+    }
+
+    document.addEventListener('click', function(e){
+      var item = e.target.closest('.catalog-item,.moving-item,.hero-photo');
+      if (!item || box.contains(e.target)) return;
+      var img = item.querySelector('img');
+      if (!img) return;
+      var cap = item.querySelector('figcaption');
+      var label = (cap && cap.firstChild && cap.firstChild.textContent.trim()) ||
+                  (item.querySelector('span') && item.querySelector('span').textContent) ||
+                  img.alt || 'Producto personalizado';
+      openBox(img.src, img.alt, label);
+    });
+    document.getElementById('lightbox-close').addEventListener('click', closeBox);
+    box.addEventListener('click', function(e){ if (e.target === box) closeBox(); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && box.classList.contains('open')) closeBox(); });
+
+    /* ---- rotación de la foto principal ---- */
+    var hero = document.querySelector('.hero-photo img');
+    if (hero && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var fotos = ['catalogo/a.jpeg','catalogo/b.jpeg','catalogo/e.jpeg','catalogo/g.jpeg','catalogo/o.jpeg','catalogo/v.jpeg'], pos = 0;
+      setInterval(function(){
+        pos = (pos + 1) % fotos.length;
+        hero.style.opacity = '0';
+        setTimeout(function(){ hero.src = fotos[pos]; hero.style.opacity = '1'; }, 300);
+      }, 5200);
+    }
+
+    /* ---- header con sombra al hacer scroll ---- */
+    var header = document.getElementById('site-header');
+    var onScroll = function(){ header.classList.toggle('is-stuck', window.scrollY > 12); };
+    window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+    /* ---- aparición progresiva de secciones ---- */
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); } });
+      }, {rootMargin:'0px 0px -60px 0px'});
+      document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('visible'); });
+    }
+
+    /* ---- carga diferida de las imágenes pesadas de las secciones externas ---- */
+    new MutationObserver(function(muts){
+      muts.forEach(function(m){
+        m.addedNodes.forEach(function(node){
+          if (node.nodeType !== 1) return;
+          node.querySelectorAll && node.querySelectorAll('img:not([loading])').forEach(function(img){
+            img.loading = 'lazy'; img.decoding = 'async';
+          });
+        });
+      });
+    }).observe(document.body, {childList:true, subtree:true});
+  })();
+  </script>
+
+  <script src="halloween-online.js?v=6"></script>
+  <script src="bebe-seccion.js?v=7"></script>
+</body>
+</html>
