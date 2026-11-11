@@ -26,13 +26,13 @@
 
 <style id="viernes-negro-temporada">
 /* Campaña temporal de Viernes Negro: fondo no interactivo en toda la página */
-.viernes-negro-ambiente{position:fixed;inset:0;z-index:12;pointer-events:none;user-select:none;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:space-around;opacity:.23}
+.viernes-negro-ambiente{position:fixed;inset:0;z-index:12;pointer-events:none;user-select:none;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:space-around;opacity:.45}
 .viernes-negro-ambiente .fila-fuego{width:100%;white-space:nowrap;text-align:center;transform:rotate(-8deg);filter:drop-shadow(0 0 12px #ff5b00)}
 .viernes-negro-ambiente .fila-fuego:nth-child(2){transform:rotate(7deg)}
-.viernes-negro-ambiente strong{font-weight:1000;font-size:clamp(2.4rem,10vw,8rem);line-height:1;letter-spacing:-.065em;color:#ffd03b;-webkit-text-stroke:1px #992100;text-shadow:0 0 10px #ffba21,0 0 22px #ff6a00,0 0 40px #ff2100;animation:fuego-viernes 1.5s ease-in-out infinite alternate}
+.viernes-negro-ambiente strong{font-weight:1000;font-size:clamp(2.4rem,10vw,8rem);line-height:1;letter-spacing:-.065em;color:#ffd03b;-webkit-text-stroke:3px #000;paint-order:stroke fill;text-shadow:0 0 4px #000,0 0 10px #000,0 0 20px #ffba21,0 0 34px #ff6a00,0 0 50px #ff2100;animation:fuego-viernes 1.5s ease-in-out infinite alternate}
 .viernes-negro-ambiente .llama{font-size:clamp(1.8rem,5vw,5rem);vertical-align:middle}
 @keyframes fuego-viernes{from{filter:brightness(.85);transform:scale(.99)}to{filter:brightness(1.2);transform:scale(1.025)}}
-@media(max-width:600px){.viernes-negro-ambiente{opacity:.18}.viernes-negro-ambiente strong{font-size:clamp(1.7rem,9vw,3.5rem)}}
+@media(max-width:600px){.viernes-negro-ambiente{opacity:.38}.viernes-negro-ambiente strong{font-size:clamp(1.7rem,9vw,3.5rem)}}
 @media(prefers-reduced-motion:reduce){.viernes-negro-ambiente strong{animation:none}}
 </style>
 
