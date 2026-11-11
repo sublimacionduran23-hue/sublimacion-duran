@@ -58,6 +58,43 @@
 #alerta-viernes-negro .alerta-estado{font-weight:950;color:#ffdf45;font-size:clamp(1.1rem,3vw,1.5rem)}
 @media(max-width:500px){#alerta-viernes-negro{padding:14px 10px 18px}#alerta-viernes-negro .alerta-contador{gap:5px}#alerta-viernes-negro .alerta-tiempo{padding:8px 2px}#alerta-viernes-negro .alerta-unidad{font-size:.56rem}}
 </style>
+
+<style id="navidad-magica-estilos">
+/* Navidad 2026: permanece totalmente oculta hasta 2026-12-01 00:00:00 -06:00. */
+#navidad-magica-2026,#navidad-nieve-2026{display:none!important}
+html.navidad-activa-2026 #alerta-viernes-negro,
+html.navidad-activa-2026 .viernes-negro-ambiente{display:none!important}
+html.navidad-activa-2026 #navidad-magica-2026{display:block!important}
+html.navidad-activa-2026 #navidad-nieve-2026{display:block!important}
+#navidad-magica-2026{position:relative;overflow:hidden;isolation:isolate;padding:clamp(36px,7vw,75px) 18px;background:radial-gradient(circle at 17% 25%,#34865a 0,transparent 35%),radial-gradient(circle at 85% 80%,#9c2935 0,transparent 33%),linear-gradient(140deg,#0b302b,#153b30 48%,#671e30);color:#fff;border-block:6px solid #e8c772;box-shadow:0 9px 28px #143a302f;text-align:center}
+#navidad-magica-2026:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.25;background:radial-gradient(circle,#fff 1.5px,transparent 2px) 0 0/48px 48px,radial-gradient(circle,#fff 1px,transparent 2px) 20px 23px/65px 65px}
+#navidad-magica-2026 .navidad-wrap{position:relative;z-index:1;max-width:1000px;margin:0 auto}
+#navidad-magica-2026 .navidad-distintivo{font-size:.8rem;letter-spacing:.14em;font-weight:900;color:#fff2bc}
+#navidad-magica-2026 h2{font-size:clamp(2rem,6vw,4.6rem);line-height:1.08;font-weight:1000;margin:12px auto;color:#fff8e4;text-shadow:0 4px 0 #123629,0 0 30px #f6cf5c8a}
+#navidad-magica-2026 .navidad-frase{font-weight:850;font-size:clamp(1.1rem,2.5vw,1.6rem);margin:12px auto;color:#ffe5a9}
+#navidad-magica-2026 .navidad-detalle{font-size:1rem;line-height:1.7;max-width:670px;margin:0 auto 21px;color:#f3ffef}
+#navidad-magica-2026 .navidad-escena{display:flex;justify-content:center;align-items:center;gap:clamp(10px,3vw,32px);font-size:clamp(2rem,7vw,4.5rem);margin:15px 0 8px;filter:drop-shadow(0 7px 10px #0005)}
+#navidad-magica-2026 .navidad-escena span:nth-child(2){font-size:clamp(3rem,10vw,7rem)}
+#navidad-magica-2026 .navidad-boton{display:inline-block;position:relative;background:#ffe0a0;color:#184533;border:2px solid #fff4d6;border-radius:999px;padding:12px 24px;font-weight:950;text-decoration:none;box-shadow:0 6px 0 #9c6e2f;transition:transform .18s ease}
+#navidad-magica-2026 .navidad-boton:hover{transform:translateY(-3px)}
+#navidad-nieve-2026{position:fixed;inset:0;z-index:12;overflow:hidden;pointer-events:none;user-select:none}
+#navidad-nieve-2026 .copo{position:absolute;top:-12%;left:var(--x);color:white;font-size:var(--size);opacity:.8;text-shadow:0 0 4px #456d7a;animation:caer-navidad var(--dur) linear infinite;animation-delay:var(--delay)}
+@keyframes caer-navidad{0%{transform:translate3d(0,-10vh,0) rotate(0)}100%{transform:translate3d(var(--drift),115vh,0) rotate(180deg)}}
+@media(prefers-reduced-motion:reduce){#navidad-nieve-2026 .copo{animation:none;display:none}}
+@media(max-width:600px){#navidad-magica-2026{padding:35px 14px}#navidad-magica-2026 .navidad-detalle{font-size:.9rem}}
+</style>
+<script id="navidad-programacion-2026">
+(function(){
+  'use strict';
+  var inicio=Date.parse('2026-12-01T00:00:00-06:00');
+  function actualizarNavidad(){
+    document.documentElement.classList.toggle('navidad-activa-2026',Date.now()>=inicio);
+  }
+  actualizarNavidad();
+  setInterval(actualizarNavidad,15000);
+  document.addEventListener('visibilitychange',function(){if(!document.hidden)actualizarNavidad();});
+})();
+</script>
 </head><style>.hero-photo img{visibility:hidden}</style><script>document.addEventListener('DOMContentLoaded',function(){var hero=document.querySelector('.hero-photo img');if(hero){hero.src='imagenes/a.jpeg';hero.style.visibility='visible';}});</script>
 <body><div class="viernes-negro-ambiente" aria-hidden="true"><div class="fila-fuego"><span class="llama">🔥</span><strong> VIERNES NEGRO </strong><span class="llama">🔥</span></div><div class="fila-fuego"><span class="llama">🔥</span><strong> VIERNES NEGRO </strong><span class="llama">🔥</span></div><div class="fila-fuego"><span class="llama">🔥</span><strong> VIERNES NEGRO </strong><span class="llama">🔥</span></div></div><script>document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('a').forEach(function(a){var raw=a.getAttribute('href')||'';if(raw.indexOf('wa.me/50686458480?text=')!==-1){a.href='https://api.whatsapp.com/send?phone=50686458480&text='+raw.split('?text=')[1]}else if(raw.indexOf('api.whatsapp.com/send?phone=50686458480?text=')!==-1){a.href=raw.replace('?phone=50686458480?text=','?phone=50686458480&text=')}});document.querySelectorAll('a[href*="tiktok.com"]').forEach(function(a){a.href='https://www.tiktok.com/@sublimacionduran07042018'});var cta=document.querySelector('.catalog-cta a');if(cta){cta.textContent='Solicitar catálogo completo por WhatsApp →';cta.href='https://api.whatsapp.com/send?phone=50686458480&text='+encodeURIComponent('Hola Sublimación Durán, quiero solicitar el catálogo completo para descargarlo')}var hero=document.querySelector('.hero-photo img');if(hero){var fotos=['imagenes/a.jpeg','imagenes/b.jpeg','imagenes/e.jpeg','imagenes/g.jpeg','imagenes/o.jpeg','imagenes/v.jpeg'],pos=0;hero.style.transition='opacity .22s ease';setInterval(function(){pos=(pos+1)%fotos.length;hero.style.opacity='0';setTimeout(function(){hero.src=fotos[pos];hero.style.opacity='1'},220)},5000)}});</script>
   <div class="topbar"><div class="wrap"><span>Diseños que se sienten como regalo</span><a href="https://wa.me/50686458480?text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20cotizar%20un%20producto%20personalizado">Escríbenos por WhatsApp →</a></div></div>
@@ -100,7 +137,31 @@
   timer=setInterval(actualizar,1000);
   document.addEventListener('visibilitychange',function(){if(!document.hidden)actualizar();});
 })();
-</script><div class="strip"><div class="wrap strip-inner"><span><b>✦</b> Para regalar</span><span><b>✦</b> Para emprender</span><span><b>✦</b> Para recordar</span><span><b>✦</b> Hecho con amor</span></div></div>
+</script>
+<section id="navidad-magica-2026" aria-label="Campaña navideña de regalos personalizados 2026">
+  <div class="navidad-wrap">
+    <div class="navidad-distintivo">❄️ SUBLIMACIÓN DURÁN · NAVIDAD 2026 ❄️</div>
+    <div class="navidad-escena" aria-hidden="true"><span>🎄</span><span>☃️</span><span>🎁</span></div>
+    <h2>¡La magia de la Navidad ya llegó! 🎄</h2>
+    <p class="navidad-frase">Esta Navidad, regalá emociones que duran para siempre.</p>
+    <p class="navidad-detalle">Sorprendé con tazas, camisas, cojines y detalles personalizados para compartir con quienes más querés. ❄️🎁</p>
+    <a class="navidad-boton" href="https://api.whatsapp.com/send?phone=50686458480&amp;text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20consultar%20por%20regalos%20navide%C3%B1os%20personalizados">🎁 Consultar regalos por WhatsApp</a>
+  </div>
+</section>
+<div id="navidad-nieve-2026" aria-hidden="true">
+  <span class="copo" style="--x:4%;--size:17px;--dur:12s;--delay:-7s;--drift:35px">❄</span>
+  <span class="copo" style="--x:12%;--size:24px;--dur:16s;--delay:-4s;--drift:-32px">❄</span>
+  <span class="copo" style="--x:21%;--size:13px;--dur:13s;--delay:-11s;--drift:19px">❄</span>
+  <span class="copo" style="--x:30%;--size:20px;--dur:17s;--delay:-3s;--drift:40px">❄</span>
+  <span class="copo" style="--x:40%;--size:16px;--dur:11s;--delay:-9s;--drift:-22px">❄</span>
+  <span class="copo" style="--x:50%;--size:25px;--dur:19s;--delay:-2s;--drift:26px">❄</span>
+  <span class="copo" style="--x:59%;--size:15px;--dur:14s;--delay:-5s;--drift:-19px">❄</span>
+  <span class="copo" style="--x:68%;--size:19px;--dur:15s;--delay:-12s;--drift:32px">❄</span>
+  <span class="copo" style="--x:77%;--size:22px;--dur:18s;--delay:-10s;--drift:-23px">❄</span>
+  <span class="copo" style="--x:86%;--size:14px;--dur:12s;--delay:-1s;--drift:27px">❄</span>
+  <span class="copo" style="--x:95%;--size:18px;--dur:16s;--delay:-6s;--drift:-38px">❄</span>
+</div>
+<div class="strip"><div class="wrap strip-inner"><span><b>✦</b> Para regalar</span><span><b>✦</b> Para emprender</span><span><b>✦</b> Para recordar</span><span><b>✦</b> Hecho con amor</span></div></div>
     <section id="productos"><div class="wrap"><div class="section-head"><h2>Un detalle para<br>cada historia.</h2><p>Cuéntanos qué tienes en mente y lo convertimos en una pieza hecha especialmente para ti.</p></div><div class="cards"><article class="card"><div class="icon">☕</div><div><h3>Tazas</h3><p>Para el café de cada mañana, con tu diseño favorito.</p></div></article><article class="card"><div class="icon">👕</div><div><h3>Camisas</h3><p>Diseños para equipos, familias, eventos y marcas.</p></div></article><article class="card"><div class="icon">🔑</div><div><h3>Llaveros</h3><p>Pequeños recuerdos que te acompañan a todas partes.</p></div></article><article class="card"><div class="icon">🎁</div><div><h3>Mucho más</h3><p>Botellas, estuches, adornos, bufandas y tus ideas.</p></div></article></div><div class="catalog-grid"><figure class="catalog-item"><img src="imagenes/3.jpeg" alt="Productos personalizados"><figcaption>Productos personalizados<small>Diseños para cada ocasión</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/4.jpeg" alt="Placas para vehículos"><figcaption>Placas personalizadas<small>Para carro, moto y camión</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/5.jpeg" alt="Cerámicas personalizadas"><figcaption>Cerámicas<small>Recuerdos para decorar</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/6.jpeg" alt="Collares personalizados"><figcaption>Collares de acero<small>Detalles con estilo</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/7.jpeg" alt="Collares para parejas"><figcaption>Collares para parejas<small>Una conexión especial</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/8.jpeg" alt="Espejos personalizados"><figcaption>Espejos<small>Compactos y únicos</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/9.jpeg" alt="Llaveros personalizados"><figcaption>Llaveros<small>Pequeños detalles</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/10.jpeg" alt="Camisas personalizadas"><figcaption>Camisas<small>Para empresas y eventos</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/11.jpeg" alt="Cojines personalizados"><figcaption>Cojines con foto<small>Recuerdos que abrazan</small></figcaption></figure><figure class="catalog-item"><img src="imagenes/12.jpeg" alt="Placas para mascotas"><figcaption>Placas para mascotas<small>Ellos también son familia</small></figcaption></figure></div><div class="catalog-cta"><a href="https://wa.me/50686458480?text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20ver%20el%20cat%C3%A1logo%20completo">¿Buscas algo más? Pregúntanos por WhatsApp →</a></div></div></section>
     <section class="about" id="proceso"><div class="wrap about-grid"><div><div class="eyebrow">De tu imaginación a tus manos</div><h2>Así creamos algo que se parece a ti.</h2><p>Trabajamos cada pedido con atención al detalle para que el resultado tenga tus colores, tu mensaje y tu esencia.</p></div><div class="steps"><div class="step"><strong>1</strong><div><h3>Nos cuentas tu idea</h3><p>Escríbenos por WhatsApp con el producto, cantidad y diseño que imaginas.</p></div></div><div class="step"><strong>2</strong><div><h3>Preparamos tu propuesta</h3><p>Coordinamos los detalles contigo antes de producir.</p></div></div><div class="step"><strong>3</strong><div><h3>Lo hacemos realidad</h3><p>Recibes un producto alegre, personalizado y listo para regalar.</p></div></div></div></div></section>
     <section class="contact" id="contacto"><div class="wrap contact-grid"><div><h2>¿Ya tienes una idea?</h2><p>Hablemos de tu próximo detalle personalizado.</p></div><a class="wa" href="https://wa.me/50686458480?text=Hola%20Sublimaci%C3%B3n%20Dur%C3%A1n%2C%20quiero%20hacer%20una%20cotizaci%C3%B3n"><span>◉</span>Escribir por WhatsApp</a></div></section>
