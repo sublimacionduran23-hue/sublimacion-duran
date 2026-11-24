@@ -25,7 +25,7 @@
   document.head.appendChild(style);
   var section=document.createElement('section');
   section.className='baby-feature';
-  section.innerHTML='<div class="wrap"><div class="section-head"><h2>Productos para <span>bebé</span></h2><p>Detalles personalizados para celebrar sus primeros momentos.</p></div><div class="baby-collage"></div><div class="baby-carousel-help">Carrusel lento · pasa el cursor para detenerlo →</div></div>';
+  section.innerHTML='<div class="wrap"><div class="section-head"><h2>Productos para <span>bebé</span></h2><p>Detalles personalizados para celebrar sus primeros momentos.</p></div><div class="baby-collage"></div><div class="baby-carousel-help">Deslizá para ver más productos →</div></div>';
   var collage=section.querySelector('.baby-collage');
   data.forEach(function(item){
     var tile=document.createElement('figure');
@@ -38,18 +38,6 @@
     };
     collage.appendChild(tile);
   });
-  var babyAutoScroll=true;
-  setInterval(function(){
-    if(!babyAutoScroll)return;
-    var max=collage.scrollWidth-collage.clientWidth;
-    if(max<=0)return;
-    if(collage.scrollLeft>=max-2)collage.scrollLeft=0;
-    else collage.scrollLeft+=1;
-  },75);
-  collage.addEventListener('mouseenter',function(){babyAutoScroll=false;});
-  collage.addEventListener('mouseleave',function(){babyAutoScroll=true;});
-  collage.addEventListener('touchstart',function(){babyAutoScroll=false;},{passive:true});
-  collage.addEventListener('touchend',function(){setTimeout(function(){babyAutoScroll=true;},1200);},{passive:true});
   host.parentNode.insertBefore(section,host);
   var generalGrid=document.querySelector('.catalog-grid');
   var generalData=[
